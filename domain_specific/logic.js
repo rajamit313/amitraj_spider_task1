@@ -211,7 +211,7 @@ reset.addEventListener('click',()=>{
     },600);
 });
 mute.addEventListener('click',()=>{
-    if(!(isMute)) clickSound.play();
+    clickSound.play();
     if(isMute){
         isMute = false;
         mute.innerHTML = '🔇';
