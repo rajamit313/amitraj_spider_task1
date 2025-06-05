@@ -1,0 +1,365 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 140, 0, 0.775);
+}
+#container{
+    height: 71vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;  
+    gap: 1.5vh;
+    padding-left: 23vw;
+    position: relative;
+}
+#bigContainer{
+    height: 72vh;
+    width: 100vw;
+    display: flex;
+}
+#c1, #c2, #c3, #c4, #c5, #c6, #c7 {
+    height: 72vh;
+    width: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 1.5vh;
+    
+}
+.column1,.column2,.column3,.column4,.column5,.column6,.column7{
+    height: 10vh;
+    width: 6vw;
+    background-color: rgba(133, 76, 202, 0.777);
+    border: 2.5px solid rgb(175, 32, 218);
+    text-align: center;
+    font-size: 7.3vh;
+}
+.darkColour{
+    background-color: rgba(0, 0, 0, 0.816);
+    border-color: rgba(255, 217, 0, 0.886);
+}
+#timer{
+    height: 75vh;
+    width: 29vw;
+    text-align: center;
+}
+#p1TimeDisplay{
+    color: rgb(203, 34, 34);
+}
+#p2TimeDisplay{
+    color: rgba(255, 255, 0, 0.605);
+}
+#winDisplay{
+    font-style: italic;
+    height: 10vh;
+    padding-top: 8vh;
+}
+
+#buttons{
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;
+}
+#buttons2{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;
+}
+.button{
+    height: 7vh;
+    width: 7vw;
+    border-radius: 7px;
+    font-size: 1.5vw;
+    background-color: bisque;
+}
+.button2{
+    border-radius: 7px;
+    background-color: bisque;
+}
+.columnButtons{
+    height: 3vh;
+    width: 4.2vw;
+    border-radius: 5px;
+}
+.columnButtons:hover{
+    background-color: chartreuse;
+}
+#colButton{
+    display: flex;
+    padding-left: 24.4vw;
+    gap: 3vw;
+}
+h3{
+    height: 2vh;
+}
+#darkmode{
+    width: 3vw;
+    height: 4.5vh;
+}
+#mute{
+    width: 3vw;
+    height: 4.5vh;
+}
+.lb{
+    color: rgb(15, 119, 142);
+}
+@media only screen and (350px <= width <= 500px){
+    #bigContainer{
+        height: 50vh;
+        display: block;
+    }
+    #container{
+        height: 50vh;
+        width: 100%;
+        padding: 0px;
+        gap: 3vh;
+    }
+    #c1, #c2, #c3, #c4, #c5, #c6, #c7 {
+        height: 50vh;
+        gap: 1vh;
+    }
+    .column1,.column2,.column3,.column4,.column5,.column6,.column7{
+        font-size: 5vh;
+        width: 9vw;
+    }
+    .columnButtons{
+        height: 2.7vh;
+        width: 8vw; 
+        font-size: 10px;
+    }
+    #colButton{
+        padding-left: 12vw;
+        padding-top: 1vh;  
+        gap: 3.5vw;
+    }
+    #buttons{
+        position: absolute;
+        bottom: 50px;
+        height: 10vh;
+        gap: 4.5vw;
+    }
+    #buttons2{
+        position: absolute;
+        bottom: 1px;
+        gap: 4.5vw;
+    }
+    .button{
+        height: 7vh;
+        width: 15vw;
+        border-radius: 7px;
+        font-size: 3.2vw;
+    }
+    .button2{
+        width: 3vh;
+        height: 3vh;
+        font-size: 3vw;
+    }
+    #mute, #darkmode{
+        height: 5vh;
+        width: 7vw;
+    }
+    #timer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+        gap: 5vw;
+        padding-left: 2vw;
+    }
+    h1{
+        font-size: 20px;
+    }
+   #winDisplay{
+        height: 100px;
+    }
+    h3{
+        height: 5px;
+        font-size: 15px;
+    }
+    h2{
+        font-size: 18px;
+        height: 10px;
+    }
+    #leaderboard{
+        position: fixed;
+        left: 40vw;
+        bottom: 17vh;
+    }
+}
+@media only screen and (max-width: 700px) and (min-width: 500px){
+    #bigContainer{
+        height: 50vh;
+        display: block;
+    }
+    #container{
+        height: 50vh;
+        width: 100%;
+        padding: 0px;
+        gap: 3vh;
+    }
+    #c1, #c2, #c3, #c4, #c5, #c6, #c7 {
+        height: 50vh;
+        gap: 1vh;
+    }
+    .column1,.column2,.column3,.column4,.column5,.column6,.column7{
+        font-size: 5vh;
+        width: 9vw;
+    }
+    .columnButtons{
+        height: 2.7vh;
+        width: 8vw; 
+        font-size: 10px;
+    }
+    #colButton{
+        padding-left: 14.5vw;
+        padding-top: 1vh;  
+        gap: 2.5vw;
+    }
+    #buttons{
+        position: absolute;
+        bottom: 50px;
+        height: 10vh;
+        gap: 4.5vw;
+    }
+    #buttons2{
+        position: absolute;
+        bottom: 1px;
+        height: 7vh;
+        gap: 10vw;
+    }
+    .button{
+        height: 7vh;
+        width: 15vw;
+        border-radius: 7px;
+        font-size: 3.2vw;
+    }
+    .button2{
+        font-size: 2vw;
+    }
+    #mute, #darkmode{
+        height: 5vh;
+        width: 7vw;
+    }
+    #timer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+        gap: 8vw;
+        padding-left: 3vw;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #winDisplay{
+        height: 100px;
+    }
+    h3{
+        height: 5px;
+        font-size: 15px;
+    }
+    h2{
+        font-size: 18px;
+        height: 10px;
+    }
+    #leaderboard{
+        position: fixed;
+        left: 40vw;
+        bottom: 17vh;
+    }
+}
+@media only screen and (max-width: 350px){
+    #bigContainer{
+        height: 40vh;
+        display: block;
+    }
+    #container{
+        height: 40vh;
+        width: 100%;
+        padding: 0px;
+        gap: 3vh;
+    }
+    #c1, #c2, #c3, #c4, #c5, #c6, #c7 {
+        height: 40vh;
+        gap: 1vh;
+    }
+    .column1,.column2,.column3,.column4,.column5,.column6,.column7{
+        font-size: 4vh;
+        width: 9vw;
+    }
+    .columnButtons{
+        height: 2.5vh;
+        width: 8.2vw; 
+        font-size: 10px;
+    }
+    #colButton{
+        padding-left: 5.8vw;
+        padding-top: 1vh;  
+        gap: 5.2vw;
+    }
+    #buttons{
+        position: absolute;
+        bottom: 50px;
+        height: 10vh;
+        gap: 4.5vw;
+    }
+    #buttons2{
+        position: absolute;
+        bottom: 1px;
+        height: 7vh;
+        gap: 10vw;
+    }
+    .button{
+        height: 7vh;
+        width: 20vw;
+        border-radius: 7px;
+        font-size: 4.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button2{
+        font-size: 5vw;
+    }
+    #mute, #darkmode{
+        height: 5vh;
+        width: 9vw;
+    }
+    
+    #timer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+        gap: 5vw;
+        padding-left: 2.5vw;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #winDisplay{
+        height: 100px;
+    }
+    h3{
+        height: 5px;
+        font-size: 15px;
+    }
+    h2{
+        font-size: 18px;
+        height: 10px;
+    }
+    #leaderboard{
+        position: fixed;
+        left: 40vw;
+        bottom: 17vh;
+    }
+}
