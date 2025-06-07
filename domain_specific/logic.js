@@ -129,7 +129,10 @@ function updateHighScores(numberOfMoves, playerNumber) {
     lb.style.fontStyle = 'italic';
     for(let i = 0; i<5; i++){
         let h = document.querySelector(`#l${i+1}`);
+        if(leaderboard[i] != 42)
         h.innerHTML = `${i+1}.&nbsp;&nbsp;&nbsp;${leaderboard[i]}`;
+        else
+        h.innerHTML = `${i+1}.&nbsp;&nbsp;&nbsp;-`;
     }
 }
 function winningCondition() {
